@@ -4,3 +4,4 @@ JavaScript-Advanced
 * Arrays
 * Objects
 * Advanced Functions
+* DOM Introduction
