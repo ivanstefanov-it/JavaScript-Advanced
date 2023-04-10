@@ -5,3 +5,5 @@ JavaScript-Advanced
 * Objects
 * Advanced Functions
 * DOM Introduction
+* Classes
+* Prototypes And Inheritance
