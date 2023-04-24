@@ -1,4 +1,4 @@
-# JavaScript-Advanced
+# Course content:
 JavaScript-Advanced
 * Syntax, Functions and Statements
 * Arrays
@@ -7,3 +7,7 @@ JavaScript-Advanced
 * DOM Introduction
 * Classes
 * Prototypes And Inheritance
+
+JavaScript-Application
+*Asynchronous Programming
+*Remote Data and Authentication
