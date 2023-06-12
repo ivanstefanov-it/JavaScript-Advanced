@@ -1,11 +1,11 @@
 // on expression = funtion without a name avoid polluting the global scope with names.
 
 /*
-const greeding = function(){
+const greeting = function(){
     console.log("Hello!");
 }
 
-greeding();
+greeting();
 */
 /*
 sayHello();
