@@ -8,7 +8,7 @@ JavaScript-Advanced
 * Classes
 * Prototypes And Inheritance     
 
-JavaScript-Application
+JavaScript-Application    
 *Asynchronous Programming
 *Remote Data and Authentication
 *Single Page Applications
