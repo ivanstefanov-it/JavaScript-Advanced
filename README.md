@@ -9,9 +9,9 @@ JavaScript-Advanced
 * Prototypes And Inheritance     
 
 JavaScript-Application    
-*Asynchronous Programming
-*Remote Data and Authentication
-*Single Page Applications
++Asynchronous Programming
++Remote Data and Authentication
++Single Page Applications
 
 JavaScript Tutorial For Beginners   
 *Variables
