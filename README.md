@@ -6,14 +6,14 @@ JavaScript-Advanced
 * Advanced Functions
 * DOM Introduction
 * Classes
-* Prototypes And Inheritance
+* Prototypes And Inheritance     
 
 JavaScript-Application
 *Asynchronous Programming
 *Remote Data and Authentication
 *Single Page Applications
 
-JavaScript Tutorial For Beginners
+JavaScript Tutorial For Beginners   
 *Variables
 *Arithmetic expressions
 *user input
