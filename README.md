@@ -1,5 +1,5 @@
 # Course content:
-JavaScript-Advanced
+1. JavaScript-Advanced
 * Syntax, Functions and Statements
 * Arrays
 * Objects
@@ -8,12 +8,12 @@ JavaScript-Advanced
 * Classes
 * Prototypes And Inheritance     
 
-JavaScript-Application    
+2. JavaScript-Application    
 +Asynchronous Programming
 +Remote Data and Authentication
 +Single Page Applications
 
-JavaScript Tutorial For Beginners   
+3. JavaScript Tutorial For Beginners   
 *Variables
 *Arithmetic expressions
 *user input
@@ -98,10 +98,10 @@ JavaScript Tutorial For Beginners
 *cookies
 *stopwatch program
 
-Pong Game
+4. Pong Game
 
-Rock Paper Scissors
+5. Rock Paper Scissors
 
-Snake Game
+6. Snake Game
 
-Tic Tak Toe
+7. Tic Tak Toe
