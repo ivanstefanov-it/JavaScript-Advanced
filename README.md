@@ -14,8 +14,8 @@ JavaScript-Application
 *Single Page Applications
 
 JavaScript Tutorial For Beginners
-*variables
-*arithmetic expressions
+*Variables
+*Arithmetic expressions
 *user input
 *type conversion
 *const
