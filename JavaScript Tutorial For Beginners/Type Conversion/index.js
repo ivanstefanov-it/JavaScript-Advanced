@@ -1,3 +1,5 @@
+// Type Conversion - change the datatype of a value to another
+
 let age = window.prompt("How old are you?");
 
 console.log(typeof age); //string

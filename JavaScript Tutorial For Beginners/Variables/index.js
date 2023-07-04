@@ -1,3 +1,7 @@
+// A variable is a container for storing data
+// A variable behaves as if it was the value that it contains
+// Declaration -> var, let, const 
+
 let firstName = "Ivan";
 let age;
 age = 30;

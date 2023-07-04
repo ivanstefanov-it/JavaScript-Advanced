@@ -1,3 +1,5 @@
+// useful string properties and methods
+
 let username = "Ivan Stefanov";
 let phoneNumber = "123-456-7890";
 

@@ -1,3 +1,5 @@
+// const - a variable that can't be changed
+
 const pi = 3.14159;
 let radius;
 let curcumference;
