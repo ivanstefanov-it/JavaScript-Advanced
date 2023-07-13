@@ -1,3 +1,5 @@
+//function = define code once, and use it many times. To perform some code, call the function name.
+
 let userName = "Ivan"
 let age = 30;
 happyBirthday(userName, age);

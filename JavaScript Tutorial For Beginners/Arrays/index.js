@@ -1,3 +1,5 @@
+// array - a variable that can store multiple values
+
 let fruits = ["apple", "banana", "orange"];
 
 console.log(fruits);//"apple", "banana", "orange"

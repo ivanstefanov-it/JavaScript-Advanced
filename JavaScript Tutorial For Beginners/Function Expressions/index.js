@@ -1,4 +1,4 @@
-// on expression = funtion without a name avoid polluting the global scope with names.
+// function expression = funtion without a name avoid polluting the global scope with names.
 
 /*
 const greeting = function(){

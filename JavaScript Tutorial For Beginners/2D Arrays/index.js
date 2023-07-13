@@ -1,3 +1,5 @@
+// 2D array = an array of arrays
+
 let fruits = ["apples", "oranges", "bananas"];
 let vagetables = ["carrots", "onions", "patatoes"];
 let meats = ["eggs", "chicken", "fish"];

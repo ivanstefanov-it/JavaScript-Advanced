@@ -1,3 +1,5 @@
+// while loop - repeat some code whili some condition is true. Potentially infinite
+
 let userName = "";
 
 while(userName == "" || userName == null){

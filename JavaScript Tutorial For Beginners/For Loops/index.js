@@ -1,3 +1,5 @@
+// for loop - repeat some code a certain amount of times
+
 for (let i = 0; i <= 10; i+=2) {
     console.log(i);
 }

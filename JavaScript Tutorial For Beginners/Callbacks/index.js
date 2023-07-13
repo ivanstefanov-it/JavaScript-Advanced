@@ -1,3 +1,5 @@
+// callback - a function passed as an argument to another function
+
 sum(2, 3, displayConsole);
 sum(2, 3, displayDOM);
 

@@ -1,3 +1,5 @@
+//template literals - delimited with (`) instead of double of single quotes. Allwos embedded variables and expressions
+
 let userName = "Ivan";
 let items = 3;
 let total = 75;

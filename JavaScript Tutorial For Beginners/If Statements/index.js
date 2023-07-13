@@ -1,3 +1,7 @@
+//if statement - a basic form of decision making
+//               if a contition is true, then do something
+//               if not, then don't do it
+
 let age = 70;
 
 if(age >= 65){

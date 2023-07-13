@@ -1,3 +1,6 @@
+//spread operator([...]) - allows an iterable such as an array or string to be expanded is places 
+//                         where zero or more arguments are expexted(unpacks the elements)
+
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 console.log(numbers);//[1, 2, 3, 4, 5, 6, 7, 8, 9]
