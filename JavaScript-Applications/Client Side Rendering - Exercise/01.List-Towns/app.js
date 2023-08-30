@@ -12,7 +12,7 @@ function updateList(event){
     const townsAsString = document.getElementById('towns').value;
     const root = document.getElementById("root");
 
-    const towns = townsAsString.split(', ').map(x => x.trim());
+    const towns = townsAsString.split(',').map(x => x.trim());
     const result = listTemplate(towns);
     render(result, root);
 }
