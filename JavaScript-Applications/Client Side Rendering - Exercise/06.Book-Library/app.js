@@ -1,61 +1,62 @@
-import { html, render } from '../node_modules/lit-html/lit-html.js';
+import { render } from '../node_modules/lit-html/lit-html.js';
+import * as api from './data.js';
+import {layoutTemplate} from './main.js';
 
-const rowTemplate = (book) => html`
- <tr>
-    <td>${book.title}</td>
-    <td>${book.author}</td>
-    <td data-id=${book._id}>
-        <button class="editBtn">Edit</button>
-        <button class="deleteBtn">Delete</button>
-    </td>
-</tr>`;
+const onSubmit = {
+    'add-form': onCreateSubmit,
+    'edit-form': onEditSubmit
+};
 
-const tableTemplate = (list) => html`
-<table>
-    <thead>
-        <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Action</th>
-        </tr>
-    </thead>
-    <tbody @click=${onBtnClick}>
-        ${list.map(rowTemplate)}
-    </tbody>
-</table>`;
-
-const createFormTemplate = () => html`
-<form id="add-form">
-    <h3>Add book</h3>
-    <label>TITLE</label>
-    <input type="text" name="title" placeholder="Title...">
-    <label>AUTHOR</label>
-    <input type="text" name="author" placeholder="Author...">
-    <input type="submit" value="Submit">
-</form>`;
-
-const editFormTemplate = (book) => html`
-<form id="edit-form">
-    <input type="hidden" name="id">
-    <h3>Edit book</h3>
-    <label>TITLE</label>
-    <input type="text" name="title" placeholder="Title...">
-    <label>AUTHOR</label>
-    <input type="text" name="author" placeholder="Author...">
-    <input type="submit" value="Save">
-</form>`;
-
-const layoutTemplate = (list, bookToEdit) => html`
-<button id="loadBooks">LOAD ALL BOOKS</button>
-${tableTemplate(list)}
-${bookToEdit ? editFormTemplate(bookToEdit) : createFormTemplate()}`;
-
-render(layoutTemplate(list), document.body)
-
-function onBtnClick(event){
-    if(event.target.classList.contains('editBtn')){
-        const id = event.target.parentNode.dataset.id;
-    } else if(event.target.classList.contains('deleteBtn')){
-        const id = event.target.parentNode.dataset.id;
+const ctx = {
+    list: [],
+    async load() {
+        ctx.list = await api.getAllBooks();
+        update();
+    },
+    onEdit(id) {
+        const book = ctx.list.find(b => b._id == id);
+        update(book);
+    },
+    async onDelete(id) {
+        await api.deleteBook(id);
     }
+};
+
+document.body.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    onSubmit[event.target.id](formData, event.target);
+});
+
+start();
+
+async function start(){
+    update();
+}
+
+function update(bookToEdit){
+    const result = layoutTemplate(ctx, bookToEdit);
+    render(result, document.body);
+}
+
+async function onCreateSubmit(formData, form){
+    const book = {
+        title: formData.get('title'),
+        author: formData.get('author')
+    };
+
+    await api.createBook(book);
+    form.reset();
+}
+
+async function onEditSubmit(formData, form){
+    const id = formData.get('_id');
+    const book = {
+        title: formData.get('title'),
+        author: formData.get('author')
+    };
+
+    await api.updateBook(id, book);
+    form.reset();
+    update();
 }
