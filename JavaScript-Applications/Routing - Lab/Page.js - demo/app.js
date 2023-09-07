@@ -9,6 +9,7 @@ const pages = {
 const defaultPage = '<h2>404</h2><p>Page Not Found</p>';
 const main = document.querySelector('main');
 
+
 page('/home', updateContent);
 page('/catalog', updateContent);
 page('/catalog/:id', itemDetails);
